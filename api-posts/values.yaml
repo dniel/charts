@@ -1,0 +1,23 @@
+# Default values for api-posts.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+replicaCount: 2
+image:
+  repository: "dniel/api-posts"
+  tag: "latest"
+  pullPolicy: "Always"
+
+service:
+  name: api-posts
+  type: ClusterIP
+  externalPort: 4567
+  internalPort: 4567
+
+ingress:
+  enabled: true
+  hosts:
+    - api-hosts.local
+  annotations:
+    kubernetes.io/ingress.class: traefik
+
+resources: {}

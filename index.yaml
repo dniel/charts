@@ -1,0 +1,12 @@
+apiVersion: v1
+entries:
+  api-posts:
+  - apiVersion: v1
+    created: 2017-10-24T21:09:00.003706714+02:00
+    description: A Helm chart for Kubernetes
+    digest: 4409e4feb912b74d019a79350ba5f0d6d1c5e2353b68a7279fe12a14db0edd2b
+    name: api-posts
+    urls:
+    - api-posts-0.1.0.tgz
+    version: 0.1.0
+generated: 2017-10-24T21:09:00.003103506+02:00
