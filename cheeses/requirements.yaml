@@ -1,0 +1,10 @@
+dependencies:
+- name: cheddar
+  version: 0.1.0
+  repository: https://raw.githubusercontent.com/dniel/Charts/master
+- name: stilton
+  version: 0.1.0
+  repository: https://raw.githubusercontent.com/dniel/Charts/master
+- name: wensleydale
+  version: 0.1.0
+  repository: https://raw.githubusercontent.com/dniel/Charts/master
