@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   api-posts:
   - apiVersion: v1
-    created: 2017-10-28T20:13:55.6732298+02:00
+    created: 2017-10-28T20:35:25.6018749+02:00
     description: A Helm chart for Kubernetes
     digest: 4409e4feb912b74d019a79350ba5f0d6d1c5e2353b68a7279fe12a14db0edd2b
     name: api-posts
@@ -11,16 +11,25 @@ entries:
     version: 0.1.0
   cheddar:
   - apiVersion: v1
-    created: 2017-10-28T20:13:55.6732298+02:00
+    created: 2017-10-28T20:35:25.6018749+02:00
     description: A Helm chart for Kubernetes
     digest: 8a00d45aaeddee008342479875e756cccbba2b38eb16d07fff4b82d3cd82d955
     name: cheddar
     urls:
     - cheddar-0.1.0.tgz
     version: 0.1.0
+  cheeses:
+  - apiVersion: v1
+    created: 2017-10-28T20:35:25.6018749+02:00
+    description: A Helm chart for Kubernetes
+    digest: ee9698d2c8434b770ac4ec29362dc519d72d0c18631ec2bed3c432a3c635fc61
+    name: cheeses
+    urls:
+    - cheeses-0.1.0.tgz
+    version: 0.1.0
   stilton:
   - apiVersion: v1
-    created: 2017-10-28T20:13:55.6742325+02:00
+    created: 2017-10-28T20:35:25.6028744+02:00
     description: A Helm chart for Kubernetes
     digest: 60405eda862ddb63bcf1aaa47c90ea8173ae23c8c75e8826eaa65e23e6fe1c57
     name: stilton
@@ -29,11 +38,11 @@ entries:
     version: 0.1.0
   wensleydale:
   - apiVersion: v1
-    created: 2017-10-28T20:13:55.675226+02:00
+    created: 2017-10-28T20:35:25.6028744+02:00
     description: A Helm chart for Kubernetes
     digest: f82208faacdc6fd1f636c51654db3c7d24d077d7841caeb636b9c468158b7f5c
     name: wensleydale
     urls:
     - wensleydale-0.1.0.tgz
     version: 0.1.0
-generated: 2017-10-28T20:13:55.6712604+02:00
+generated: 2017-10-28T20:35:25.6008718+02:00
