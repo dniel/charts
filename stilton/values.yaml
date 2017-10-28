@@ -1,0 +1,26 @@
+replicaCount: 2
+image:
+  repository: "errm/cheese"
+  tag: "stilton"
+  pullPolicy: IfNotPresent
+
+service:
+  name: stilton
+  type: ClusterIP
+  externalPort: 80
+  internalPort: 80
+
+ingress:
+  enabled: true
+  hosts:
+    - stilton.local
+  annotations:
+    kubernetes.io/ingress.class: traefik
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 50Mi
+  limits:
+    cpu: 100m
+    memory: 50Mi
