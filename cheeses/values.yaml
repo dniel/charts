@@ -1,0 +1,11 @@
+wensleydale:
+  enabled: true
+
+cheddar:
+  enabled: true
+
+stilton:
+  enabled: true
+
+tags:
+  front-end: true
