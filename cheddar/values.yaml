@@ -16,7 +16,7 @@ ingress:
     - cheddar.local
   annotations:
     kubernetes.io/ingress.class: traefik
-
+    traefik.frontend.rule.type: PathPrefixStrip
 resources:
   requests:
     cpu: 100m

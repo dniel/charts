@@ -16,11 +16,12 @@ metadata:
     {{- end }}
 spec:
   rules:
+    {{- $root := . -}}
     {{- range $host := .Values.ingress.hosts }}
-    - host: {{ $host }}
+    - host: {{ $root.Release.Name }}.local
       http:
         paths:
-          - path: /
+          - path: /{{ $root.Chart.Name }}
             backend:
               serviceName: {{ $serviceName }}
               servicePort: {{ $servicePort }}

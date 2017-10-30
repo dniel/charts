@@ -1,6 +1,6 @@
 dependencies:
 - name: cheddar
-  version: 0.2.0
+  version: 0.3.0
   repository: https://raw.githubusercontent.com/dniel/Charts/master
   condition: cheddar.enabled, global.cheddar.enabled
   tags:
