@@ -8,7 +8,7 @@ dependencies:
     - cheddar
 
 - name: stilton
-  version: 0.2.0
+  version: 0.3.0
   repository: https://raw.githubusercontent.com/dniel/Charts/master
   condition: stilton.enabled, global.stilton.enabled
   tags:
@@ -16,7 +16,7 @@ dependencies:
     - stilton
 
 - name: wensleydale
-  version: 0.2.0
+  version: 0.3.0
   repository: https://raw.githubusercontent.com/dniel/Charts/master
   condition: wensleydale.enabled, global.wensleydale.enabled
   tags:
