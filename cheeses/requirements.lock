@@ -4,9 +4,9 @@ dependencies:
   version: 0.3.0
 - name: stilton
   repository: https://raw.githubusercontent.com/dniel/Charts/master
-  version: 0.3.0
+  version: 0.4.0
 - name: wensleydale
   repository: https://raw.githubusercontent.com/dniel/Charts/master
-  version: 0.3.0
-digest: sha256:823050807317eefa09956de848231b2004180c7faad08fde66a7a7b039f7c077
-generated: 2017-11-01T21:03:51.9136468+01:00
+  version: 0.4.0
+digest: sha256:f0cfd796c5c58e1c926a0e341ec87d45b5eabd1f955c6aa95e7e166dc6e21e8c
+generated: 2017-11-01T21:09:27.3870289+01:00
