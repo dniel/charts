@@ -21,7 +21,7 @@ spec:
     - host: {{ $root.Release.Name }}.local
       http:
         paths:
-          - path: /
+          - path: /wensleydale
             backend:
               serviceName: {{ $serviceName }}
               servicePort: {{ $servicePort }}
