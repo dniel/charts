@@ -37,19 +37,18 @@ service:
 
 # traefik2 CRD IngressRoute
 ingressroute: 
-  enabled: true
+  enabled: false
   hostname: www.example.test
   certResolver: default
   entryPoints: 
     - websecure
-
 
 ingress:
   enabled: false
   annotations: {}
     # kubernetes.io/ingress.class: traefik
   hosts:
-    - host: www.examplte.test
+    - host: www.example.test
       paths: []
   tls: []
   #  - secretName: chart-example-tls
