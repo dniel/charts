@@ -1,37 +1,55 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ template "fullname" . }}
+  name: {{ include "api-posts.fullname" . }}
   labels:
-    app: {{ template "name" . }}
-    chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
-    release: {{ .Release.Name }}
-    heritage: {{ .Release.Service }}
+    {{- include "api-posts.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      {{- include "api-posts.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       labels:
-        app: {{ template "name" . }}
-        release: {{ .Release.Name }}
+        {{- include "api-posts.selectorLabels" . | nindent 8 }}
     spec:
+    {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      serviceAccountName: {{ include "api-posts.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
         - name: {{ .Chart.Name }}
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - containerPort: {{ .Values.service.internalPort }}
+            - name: http
+              containerPort: 80
+              protocol: TCP
           livenessProbe:
             httpGet:
               path: /
-              port: {{ .Values.service.internalPort }}
+              port: http
           readinessProbe:
             httpGet:
               path: /
-              port: {{ .Values.service.internalPort }}
+              port: http
           resources:
-{{ toYaml .Values.resources | indent 12 }}
-    {{- if .Values.nodeSelector }}
+            {{- toYaml .Values.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
       nodeSelector:
-{{ toYaml .Values.nodeSelector | indent 8 }}
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
     {{- end }}

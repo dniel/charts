@@ -1,0 +1,23 @@
+{{- if .Values.ingressroute.enabled -}}
+{{- $fullName := include "whoami.fullname" . -}}
+{{- $servicePort := .Values.service.port -}}
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: "{{ $fullName }}"
+spec:
+  entryPoints:
+  {{- range .Values.ingressroute.entryPoints }}
+    - {{ . }}
+  {{- end }}  
+
+  routes:
+  - match: Host(`{{ .Values.ingressroute.hostname }}`)
+    kind: Rule
+    services:
+    - name: {{ $fullName }}
+      port: {{ $servicePort }}
+  tls:
+    certResolver: {{ default "default" .Values.ingressroute.certResolver | quote }}
+
+{{- end -}}
