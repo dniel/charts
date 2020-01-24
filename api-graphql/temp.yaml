@@ -1,0 +1,110 @@
+---
+# Source: api-posts/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: api-posts
+  labels:
+
+    helm.sh/chart: api-posts-0.1
+    app.kubernetes.io/name: api-posts
+    app.kubernetes.io/instance: api-posts
+    app.kubernetes.io/version: "latest"
+    app.kubernetes.io/managed-by: Tiller
+---
+# Source: api-posts/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-posts
+  labels:
+    helm.sh/chart: api-posts-0.1
+    app.kubernetes.io/name: api-posts
+    app.kubernetes.io/instance: api-posts
+    app.kubernetes.io/version: "latest"
+    app.kubernetes.io/managed-by: Tiller
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 4567
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: api-posts
+    app.kubernetes.io/instance: api-posts
+
+---
+# Source: api-posts/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-posts
+  labels:
+    helm.sh/chart: api-posts-0.1
+    app.kubernetes.io/name: api-posts
+    app.kubernetes.io/instance: api-posts
+    app.kubernetes.io/version: "latest"
+    app.kubernetes.io/managed-by: Tiller
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: api-posts
+      app.kubernetes.io/instance: api-posts
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: api-posts
+        app.kubernetes.io/instance: api-posts
+    spec:
+      serviceAccountName: api-posts
+      securityContext:
+        {}
+        
+      containers:
+        - name: api-posts
+          securityContext:
+            {}
+            
+          image: index.docker.io/dniel/api-posts
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 4567
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /system/health
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /system/health
+              port: http
+          resources:
+            {}
+            
+
+---
+# Source: api-posts/templates/ingressroute.yaml
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: "api-posts"
+spec:
+  entryPoints:
+    - websecure  
+
+  routes:
+  - match: Host(`api-posts.dniel.in`)
+    kind: Rule
+    services:
+    - name: api-posts
+      port: 80
+  tls:
+    certResolver: "default"
+---
+# Source: api-posts/templates/ingress.yaml
+
+
+
