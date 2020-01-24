@@ -42,6 +42,8 @@ ingressroute:
   certResolver: default
   entryPoints: 
     - websecure
+  middlewares:
+    - forwardauth-authorize
 
 ingress:
   enabled: false
