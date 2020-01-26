@@ -17,6 +17,13 @@ spec:
     services:
     - name: {{ $fullName }}
       port: {{ $servicePort }}
+    middlewares:
+  {{- range .Values.ingressroute.middlewares }}
+    - name: {{ .name }}
+      namespace: {{ default .Release.Namespace .namespace }}
+  {{- end }}
+
+
   tls:
     certResolver: {{ default "default" .Values.ingressroute.certResolver | quote }}
 
