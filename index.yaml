@@ -3,7 +3,7 @@ entries:
   api-graphql:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-01-24T22:12:56.402637894+01:00"
+    created: "2020-01-26T14:57:24.100134466+01:00"
     description: A Helm chart for Kubernetes
     digest: 0726f8a677c5f3863cd19747e4a1b8fd0174f0935f46cb6a90699f6faec832e5
     name: api-graphql
@@ -13,7 +13,7 @@ entries:
     version: "0.1"
   api-posts:
   - apiVersion: v1
-    created: "2020-01-24T22:12:56.403109468+01:00"
+    created: "2020-01-26T14:57:24.101129347+01:00"
     description: A Helm chart for Kubernetes
     digest: 4409e4feb912b74d019a79350ba5f0d6d1c5e2353b68a7279fe12a14db0edd2b
     name: api-posts
@@ -22,7 +22,7 @@ entries:
     version: 0.1.0
   - apiVersion: v1
     appVersion: latest
-    created: "2020-01-24T22:12:56.403648923+01:00"
+    created: "2020-01-26T14:57:24.102289433+01:00"
     description: A Helm chart for Kubernetes
     digest: e3b9c1181f6adb517f76f6db0de48ad2e08990918def6c50a473e68af3cedf23
     name: api-posts
@@ -33,17 +33,17 @@ entries:
   forwardauth:
   - apiVersion: v1
     appVersion: 2.0-rc1
-    created: "2020-01-24T22:12:56.406317671+01:00"
+    created: "2020-01-26T14:57:24.108008547+01:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
-    digest: 11c348f8a306d61d96e6bd2ba1f85c7aa9e6875684048e0922915d96adfcbe11
+    digest: 3c1f28a9e2d72e758b26e9acc4fcb6a4feae5b98788515fdafc380126319b4a6
     name: forwardauth
     urls:
     - https://dniel.github.io/charts/forwardauth-2.0.2.tgz
     version: 2.0.2
   - apiVersion: v1
     appVersion: "2.0"
-    created: "2020-01-24T22:12:56.405491382+01:00"
+    created: "2020-01-26T14:57:24.106376478+01:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
     digest: 7ed85580cd14445065566da8bfca10020ba5d73708f4da3b170589bbb5c9267b
@@ -53,7 +53,7 @@ entries:
     version: 2.0.1
   - apiVersion: v1
     appVersion: "2.0"
-    created: "2020-01-24T22:12:56.404829115+01:00"
+    created: "2020-01-26T14:57:24.104877492+01:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
     digest: 937aa80d6e9323328935f352a1eb4029aca2b079a1b2920557abc455a7e46128
@@ -63,7 +63,7 @@ entries:
     version: 2.0.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-01-24T22:12:56.404237543+01:00"
+    created: "2020-01-26T14:57:24.103566861+01:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
     digest: 82c693fcae377853cf4e9dfccd1e014287858bad9e9d3c166d0d85578afb0f47
@@ -74,7 +74,7 @@ entries:
   whoami:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-01-24T22:12:56.406957298+01:00"
+    created: "2020-01-26T14:57:24.109259017+01:00"
     description: A Helm chart for Kubernetes
     digest: f76a79eb787db77b8a7a21598848606278315aeffe6da27808277080291eebd4
     name: whoami
@@ -85,7 +85,7 @@ entries:
   www:
   - apiVersion: v1
     appVersion: "0.1"
-    created: "2020-01-24T22:12:56.407502649+01:00"
+    created: "2020-01-26T14:57:24.110470118+01:00"
     description: Website
     digest: 0e306c1532dc3a92fc051e657ce8a1dfecf3a8f61177dabdd7ae6287ce91960c
     name: www
@@ -93,4 +93,4 @@ entries:
     urls:
     - https://dniel.github.io/charts/www-0.1.tgz
     version: "0.1"
-generated: "2020-01-24T22:12:56.401777307+01:00"
+generated: "2020-01-26T14:57:24.098545095+01:00"
