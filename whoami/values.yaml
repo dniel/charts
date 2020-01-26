@@ -43,7 +43,8 @@ ingressroute:
   entryPoints: 
     - websecure
   middlewares:
-    - forwardauth-authorize
+    - name: forwardauth-authorize
+      namespace: forwardauth
 
 ingress:
   enabled: false
