@@ -20,7 +20,7 @@ spec:
     middlewares:
   {{- range .Values.ingressroute.middlewares }}
     - name: {{ .name }}
-      namespace: {{ default .Release.Namespace .namespace }}
+      namespace: {{ .namespace }}
   {{- end }}  
 
   tls:
