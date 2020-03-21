@@ -3,5 +3,5 @@ name: www
 description: Website
 
 type: application
-version: 0.1
-appVersion: latest
+version: 0.2
+appVersion: master
