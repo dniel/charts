@@ -5,6 +5,12 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: "{{ $fullName }}"
+  labels:
+    {{- include "api-posts.labels" . | nindent 4 }}
+  {{- with .Values.ingress.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
 spec:
   entryPoints:
   {{- range .Values.ingressroute.entryPoints }}
