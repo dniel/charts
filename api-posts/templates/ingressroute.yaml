@@ -7,10 +7,15 @@ metadata:
   name: "{{ $fullName }}"
   labels:
     {{- include "api-posts.labels" . | nindent 4 }}
-  {{- with .Values.ingress.annotations }}
+    {{- with .Values.ingressroute.labels }}
+    {{- toYaml . | nindent 4 }}
+    {{- end }}
+
+  {{- with .Values.ingressroute.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
   {{- end }}
+
 spec:
   entryPoints:
   {{- range .Values.ingressroute.entryPoints }}

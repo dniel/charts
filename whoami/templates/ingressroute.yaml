@@ -7,6 +7,10 @@ metadata:
   name: "{{ $fullName }}"
   labels:
     {{- include "whoami.labels" . | nindent 4 }}
+    {{- with .Values.ingressroute.labels }}
+    {{- toYaml . | nindent 4 }}
+    {{- end }}
+
   {{- with .Values.ingressroute.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
