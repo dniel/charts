@@ -3,7 +3,7 @@ entries:
   api-graphql:
   - apiVersion: v1
     appVersion: master
-    created: "2020-06-21T20:50:38.071298509+02:00"
+    created: "2020-06-21T20:55:31.109555329+02:00"
     description: A Helm chart for Kubernetes
     digest: 5e202d0ace93e33bbab79054ea75e0eaea15ae1da3a8d729611508b144a44a21
     name: api-graphql
@@ -13,7 +13,7 @@ entries:
     version: "0.5"
   - apiVersion: v1
     appVersion: master
-    created: "2020-06-21T20:50:38.070928805+02:00"
+    created: "2020-06-21T20:55:31.109151997+02:00"
     description: A Helm chart for Kubernetes
     digest: 6dd3f12e204ad62bdb3bcf54fa9bd0d3ea1853ba610476b0b26fd4c00dfae723
     name: api-graphql
@@ -23,7 +23,7 @@ entries:
     version: "0.4"
   - apiVersion: v1
     appVersion: master
-    created: "2020-06-21T20:50:38.070565142+02:00"
+    created: "2020-06-21T20:55:31.108761039+02:00"
     description: A Helm chart for Kubernetes
     digest: dc4a3e4c1ed3fcfa228e4a81ce7c6687e2e615d44a5aae454b055aeddc57a9bf
     name: api-graphql
@@ -33,7 +33,7 @@ entries:
     version: "0.3"
   - apiVersion: v1
     appVersion: master
-    created: "2020-06-21T20:50:38.070200159+02:00"
+    created: "2020-06-21T20:55:31.108386013+02:00"
     description: A Helm chart for Kubernetes
     digest: 52e35dc20196209bfa5115b26d2a1a31ea4b9ec5c01f4a99a3f4dd225c55d619
     name: api-graphql
@@ -43,7 +43,7 @@ entries:
     version: "0.2"
   - apiVersion: v1
     appVersion: latest
-    created: "2020-06-21T20:50:38.069840302+02:00"
+    created: "2020-06-21T20:55:31.108018886+02:00"
     description: A Helm chart for Kubernetes
     digest: b6c25d93559a2d64bb1531646a1557141c0fef2f417783a31428e58692c71f0b
     name: api-graphql
@@ -54,7 +54,7 @@ entries:
   api-posts:
   - apiVersion: v1
     appVersion: master
-    created: "2020-06-21T20:50:38.073708573+02:00"
+    created: "2020-06-21T20:55:31.112374829+02:00"
     description: A Helm chart for Kubernetes
     digest: 5f6d17a1bf9fb7712aed9472af654d8ffc80b8380d8e7ac16f29d8cc55ec0f99
     name: api-posts
@@ -64,7 +64,7 @@ entries:
     version: "0.5"
   - apiVersion: v1
     appVersion: master
-    created: "2020-06-21T20:50:38.073104198+02:00"
+    created: "2020-06-21T20:55:31.111349844+02:00"
     description: A Helm chart for Kubernetes
     digest: 24e24383f6cf8ad28056a24e27fc28dcfb4b413a74930ea8dd99116c5d52e8f8
     name: api-posts
@@ -74,7 +74,7 @@ entries:
     version: "0.4"
   - apiVersion: v1
     appVersion: master
-    created: "2020-06-21T20:50:38.072720986+02:00"
+    created: "2020-06-21T20:55:31.110966895+02:00"
     description: A Helm chart for Kubernetes
     digest: deb6055070dfb54f72bb3d842dbb494420fdd154f05f8aff03d8a2514dcdabff
     name: api-posts
@@ -84,7 +84,7 @@ entries:
     version: "0.3"
   - apiVersion: v1
     appVersion: master
-    created: "2020-06-21T20:50:38.072331412+02:00"
+    created: "2020-06-21T20:55:31.110589216+02:00"
     description: A Helm chart for Kubernetes
     digest: af7f0b9b473b87115b648a5e553eade792f75ee8754e2b13d59b703f415d1908
     name: api-posts
@@ -93,7 +93,7 @@ entries:
     - https://dniel.github.io/charts/api-posts-0.2.tgz
     version: "0.2"
   - apiVersion: v1
-    created: "2020-06-21T20:50:38.071588913+02:00"
+    created: "2020-06-21T20:55:31.109837201+02:00"
     description: A Helm chart for Kubernetes
     digest: 4409e4feb912b74d019a79350ba5f0d6d1c5e2353b68a7279fe12a14db0edd2b
     name: api-posts
@@ -102,7 +102,7 @@ entries:
     version: 0.1.0
   - apiVersion: v1
     appVersion: latest
-    created: "2020-06-21T20:50:38.071943833+02:00"
+    created: "2020-06-21T20:55:31.11020815+02:00"
     description: A Helm chart for Kubernetes
     digest: 984691a29ca20470135fa222c6a3f9b16c514b178ffdf68bc4ae13816fd7ba1a
     name: api-posts
@@ -113,7 +113,7 @@ entries:
   forwardauth:
   - apiVersion: v1
     appVersion: 2.0-rc1
-    created: "2020-06-21T20:50:38.080063889+02:00"
+    created: "2020-06-21T20:55:31.118390697+02:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
     digest: 815d3ed7f87bfd5bcb9fc3602c49865753a4ec68c846204dc0996ce01a003d7e
@@ -123,7 +123,7 @@ entries:
     version: 2.0.8
   - apiVersion: v1
     appVersion: 2.0-rc1
-    created: "2020-06-21T20:50:38.079554156+02:00"
+    created: "2020-06-21T20:55:31.117862911+02:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
     digest: c0633167c1ebf4378ababae9ef2789ee72ac407399b7e7bdd1e1440f7ec39a88
@@ -133,7 +133,7 @@ entries:
     version: 2.0.7
   - apiVersion: v1
     appVersion: 2.0-rc1
-    created: "2020-06-21T20:50:38.078444522+02:00"
+    created: "2020-06-21T20:55:31.116734537+02:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
     digest: a35d57205f69dad2c78923fac4b625a3543af0d365bef41e5764ea5f171c9286
@@ -143,7 +143,7 @@ entries:
     version: 2.0.6
   - apiVersion: v1
     appVersion: 2.0-rc1
-    created: "2020-06-21T20:50:38.077684889+02:00"
+    created: "2020-06-21T20:55:31.115933995+02:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
     digest: 3d439e3ff6fb396fe634e15a97f1a8a695425007a204ae5d08a142c209b00734
@@ -153,7 +153,7 @@ entries:
     version: 2.0.5
   - apiVersion: v1
     appVersion: 2.0-rc1
-    created: "2020-06-21T20:50:38.076901298+02:00"
+    created: "2020-06-21T20:55:31.115149287+02:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
     digest: f50c9da63754f79e6caa9576579de666592398db4e7ea188bbe0cffa7e3670f9
@@ -163,7 +163,7 @@ entries:
     version: 2.0.4
   - apiVersion: v1
     appVersion: 2.0-rc1
-    created: "2020-06-21T20:50:38.076309836+02:00"
+    created: "2020-06-21T20:55:31.114559178+02:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
     digest: 3027d8bbb33a48cf3bcce1854da98ba330263609f26fc4368d2d55984080ab4d
@@ -173,7 +173,7 @@ entries:
     version: 2.0.3
   - apiVersion: v1
     appVersion: 2.0-rc1
-    created: "2020-06-21T20:50:38.075809053+02:00"
+    created: "2020-06-21T20:55:31.114060904+02:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
     digest: 35cf93760f477807ab68821a4698b0868b02cd4a03dc8ed85ffd9485fa59a33d
@@ -183,7 +183,7 @@ entries:
     version: 2.0.2
   - apiVersion: v1
     appVersion: "2.0"
-    created: "2020-06-21T20:50:38.075392253+02:00"
+    created: "2020-06-21T20:55:31.113635428+02:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
     digest: 7ed85580cd14445065566da8bfca10020ba5d73708f4da3b170589bbb5c9267b
@@ -193,7 +193,7 @@ entries:
     version: 2.0.1
   - apiVersion: v1
     appVersion: "2.0"
-    created: "2020-06-21T20:50:38.075004796+02:00"
+    created: "2020-06-21T20:55:31.113242815+02:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
     digest: 937aa80d6e9323328935f352a1eb4029aca2b079a1b2920557abc455a7e46128
@@ -203,7 +203,7 @@ entries:
     version: 2.0.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-06-21T20:50:38.074463027+02:00"
+    created: "2020-06-21T20:55:31.112885735+02:00"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application
       for Traefik forward authentication.
     digest: 82c693fcae377853cf4e9dfccd1e014287858bad9e9d3c166d0d85578afb0f47
@@ -214,7 +214,30 @@ entries:
   traefik:
   - apiVersion: v1
     appVersion: 2.2.0
-    created: "2020-06-21T20:50:38.082358063+02:00"
+    created: "2020-06-21T20:55:31.122299326+02:00"
+    description: A Traefik based Kubernetes ingress controller
+    digest: ba20716917337fa93ca44a3a0be06a097c59a79eb18418833ebcbb7389088b39
+    home: https://traefik.io/
+    icon: http://traefik.io/traefik.logo.png
+    keywords:
+    - traefik
+    - ingress
+    maintainers:
+    - email: emile@vauge.com
+      name: emilevauge
+    - email: daniel.tomcej@gmail.com
+      name: dtomcej
+    - email: ludovic@containo.us
+      name: ldez
+    name: traefik
+    sources:
+    - https://github.com/containous/traefik
+    urls:
+    - https://dniel.github.io/charts/traefik-7.2.4.tgz
+    version: 7.2.4
+  - apiVersion: v1
+    appVersion: 2.2.0
+    created: "2020-06-21T20:55:31.121392113+02:00"
     description: A Traefik based Kubernetes ingress controller
     digest: f5680913ffe8296599ef28fdac1773640ca092d5cdb9071bee0d03eac889e6ca
     home: https://traefik.io/
@@ -237,7 +260,7 @@ entries:
     version: 7.2.3
   - apiVersion: v1
     appVersion: 2.2.0
-    created: "2020-06-21T20:50:38.081579819+02:00"
+    created: "2020-06-21T20:55:31.119916634+02:00"
     description: A Traefik based Kubernetes ingress controller
     digest: ef40f17b8c6f712ad058bd02a491d8a0e53cdabee0025b7f0150ceb4b1697c30
     home: https://traefik.io/
@@ -260,7 +283,7 @@ entries:
     version: 7.2.2
   - apiVersion: v1
     appVersion: 2.2.0
-    created: "2020-06-21T20:50:38.080818831+02:00"
+    created: "2020-06-21T20:55:31.119154402+02:00"
     description: A Traefik based Kubernetes ingress controller
     digest: 5952678559979b8f14551d871c72eee421c2c6090533fff114eca67c2605e58a
     home: https://traefik.io/
@@ -284,7 +307,7 @@ entries:
   whoami:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-06-21T20:50:38.084810718+02:00"
+    created: "2020-06-21T20:55:31.123711916+02:00"
     description: A Helm chart for Kubernetes
     digest: 84bde2b6be68446b1ebcdb2874f6852846ecec644b1ee1554224924e409e9755
     name: whoami
@@ -294,7 +317,7 @@ entries:
     version: "0.4"
   - apiVersion: v1
     appVersion: latest
-    created: "2020-06-21T20:50:38.084438388+02:00"
+    created: "2020-06-21T20:55:31.123362319+02:00"
     description: A Helm chart for Kubernetes
     digest: 62f0b2959bc7f6d14e35aa64d3967b025f76eddcb9ad981f8daf841634711b35
     name: whoami
@@ -304,7 +327,7 @@ entries:
     version: "0.3"
   - apiVersion: v1
     appVersion: latest
-    created: "2020-06-21T20:50:38.084064144+02:00"
+    created: "2020-06-21T20:55:31.123012471+02:00"
     description: A Helm chart for Kubernetes
     digest: 978f90c2c8fbe472d86a8fca3b1459729d160ee0c001886d3b855582628cda78
     name: whoami
@@ -314,7 +337,7 @@ entries:
     version: "0.2"
   - apiVersion: v1
     appVersion: latest
-    created: "2020-06-21T20:50:38.08331424+02:00"
+    created: "2020-06-21T20:55:31.122657991+02:00"
     description: A Helm chart for Kubernetes
     digest: 5bd37bab95645034d2fc7c39e942b2433a43a67ce7f555e431b52693ee6d6980
     name: whoami
@@ -325,7 +348,7 @@ entries:
   www:
   - apiVersion: v1
     appVersion: master
-    created: "2020-06-21T20:50:38.08617421+02:00"
+    created: "2020-06-21T20:55:31.125058728+02:00"
     description: Website
     digest: 299589f8fd5aba2d1586113d73d8282e8ac0daac06af97e55f68546ad2d60308
     name: www
@@ -335,7 +358,7 @@ entries:
     version: "0.4"
   - apiVersion: v1
     appVersion: master
-    created: "2020-06-21T20:50:38.085824313+02:00"
+    created: "2020-06-21T20:55:31.124717408+02:00"
     description: Website
     digest: 935842bbdfc4fa5a663e26c15c2c75c2233272c65663a5325808143048fd002b
     name: www
@@ -345,7 +368,7 @@ entries:
     version: "0.3"
   - apiVersion: v1
     appVersion: master
-    created: "2020-06-21T20:50:38.085479076+02:00"
+    created: "2020-06-21T20:55:31.124380108+02:00"
     description: Website
     digest: 83132da137726899767d640e3b775841fa78db670fc593b72ee82a72da9bcdf9
     name: www
@@ -355,7 +378,7 @@ entries:
     version: "0.2"
   - apiVersion: v1
     appVersion: "0.1"
-    created: "2020-06-21T20:50:38.085126341+02:00"
+    created: "2020-06-21T20:55:31.12402882+02:00"
     description: Website
     digest: 0e306c1532dc3a92fc051e657ce8a1dfecf3a8f61177dabdd7ae6287ce91960c
     name: www
@@ -363,4 +386,4 @@ entries:
     urls:
     - https://dniel.github.io/charts/www-0.1.tgz
     version: "0.1"
-generated: "2020-06-21T20:50:38.069327539+02:00"
+generated: "2020-06-21T20:55:31.107509991+02:00"
