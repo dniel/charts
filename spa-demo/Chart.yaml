@@ -3,5 +3,5 @@ name: spa-demo
 description: Simple React + Typescript SPA application for demo of authorization and authentication using Forwardauth backend in a SPA client.
 
 type: application
-version: 0.1
+version: 0.2
 appVersion: master
