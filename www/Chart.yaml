@@ -1,7 +1,0 @@
-apiVersion: v1
-name: www
-description: Website
-
-type: application
-version: 0.4
-appVersion: master
