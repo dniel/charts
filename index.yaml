@@ -114,8 +114,7 @@ entries:
   - apiVersion: v1
     appVersion: 2.0-rc1
     created: "2020-12-22T11:06:14.330836703+01:00"
-    description: A Helm chart for Kubernetes to install Auth0 Authorization application
-      for Traefik forward authentication.
+    description: A Helm chart for Kubernetes to install Auth0 Authorization application for Traefik forward authentication.
     digest: 2cd8b13fd4ab485854f59b7c85685514d91b63a5505e893968c9641e9d6e1ea7
     name: forwardauth
     urls:
@@ -124,8 +123,7 @@ entries:
   - apiVersion: v1
     appVersion: 2.0-rc1
     created: "2020-12-22T11:06:14.330320379+01:00"
-    description: A Helm chart for Kubernetes to install Auth0 Authorization application
-      for Traefik forward authentication.
+    description: A Helm chart for Kubernetes to install Auth0 Authorization application for Traefik forward authentication.
     digest: 815d3ed7f87bfd5bcb9fc3602c49865753a4ec68c846204dc0996ce01a003d7e
     name: forwardauth
     urls:
@@ -134,8 +132,7 @@ entries:
   - apiVersion: v1
     appVersion: 2.0-rc1
     created: "2020-12-22T11:06:14.329656523+01:00"
-    description: A Helm chart for Kubernetes to install Auth0 Authorization application
-      for Traefik forward authentication.
+    description: A Helm chart for Kubernetes to install Auth0 Authorization application for Traefik forward authentication.
     digest: c0633167c1ebf4378ababae9ef2789ee72ac407399b7e7bdd1e1440f7ec39a88
     name: forwardauth
     urls:
@@ -144,8 +141,7 @@ entries:
   - apiVersion: v1
     appVersion: 2.0-rc1
     created: "2020-12-22T11:06:14.327547207+01:00"
-    description: A Helm chart for Kubernetes to install Auth0 Authorization application
-      for Traefik forward authentication.
+    description: A Helm chart for Kubernetes to install Auth0 Authorization application for Traefik forward authentication.
     digest: a35d57205f69dad2c78923fac4b625a3543af0d365bef41e5764ea5f171c9286
     name: forwardauth
     urls:
@@ -154,8 +150,7 @@ entries:
   - apiVersion: v1
     appVersion: 2.0-rc1
     created: "2020-12-22T11:06:14.3265858+01:00"
-    description: A Helm chart for Kubernetes to install Auth0 Authorization application
-      for Traefik forward authentication.
+    description: A Helm chart for Kubernetes to install Auth0 Authorization application for Traefik forward authentication.
     digest: 3d439e3ff6fb396fe634e15a97f1a8a695425007a204ae5d08a142c209b00734
     name: forwardauth
     urls:
@@ -164,8 +159,7 @@ entries:
   - apiVersion: v1
     appVersion: 2.0-rc1
     created: "2020-12-22T11:06:14.325633451+01:00"
-    description: A Helm chart for Kubernetes to install Auth0 Authorization application
-      for Traefik forward authentication.
+    description: A Helm chart for Kubernetes to install Auth0 Authorization application for Traefik forward authentication.
     digest: f50c9da63754f79e6caa9576579de666592398db4e7ea188bbe0cffa7e3670f9
     name: forwardauth
     urls:
@@ -174,8 +168,7 @@ entries:
   - apiVersion: v1
     appVersion: 2.0-rc1
     created: "2020-12-22T11:06:14.324880394+01:00"
-    description: A Helm chart for Kubernetes to install Auth0 Authorization application
-      for Traefik forward authentication.
+    description: A Helm chart for Kubernetes to install Auth0 Authorization application for Traefik forward authentication.
     digest: 3027d8bbb33a48cf3bcce1854da98ba330263609f26fc4368d2d55984080ab4d
     name: forwardauth
     urls:
@@ -184,8 +177,7 @@ entries:
   - apiVersion: v1
     appVersion: 2.0-rc1
     created: "2020-12-22T11:06:14.324245586+01:00"
-    description: A Helm chart for Kubernetes to install Auth0 Authorization application
-      for Traefik forward authentication.
+    description: A Helm chart for Kubernetes to install Auth0 Authorization application for Traefik forward authentication.
     digest: 35cf93760f477807ab68821a4698b0868b02cd4a03dc8ed85ffd9485fa59a33d
     name: forwardauth
     urls:
@@ -194,8 +186,7 @@ entries:
   - apiVersion: v1
     appVersion: "2.0"
     created: "2020-12-22T11:06:14.323725589+01:00"
-    description: A Helm chart for Kubernetes to install Auth0 Authorization application
-      for Traefik forward authentication.
+    description: A Helm chart for Kubernetes to install Auth0 Authorization application for Traefik forward authentication.
     digest: 7ed85580cd14445065566da8bfca10020ba5d73708f4da3b170589bbb5c9267b
     name: forwardauth
     urls:
@@ -204,8 +195,7 @@ entries:
   - apiVersion: v1
     appVersion: "2.0"
     created: "2020-12-22T11:06:14.323246244+01:00"
-    description: A Helm chart for Kubernetes to install Auth0 Authorization application
-      for Traefik forward authentication.
+    description: A Helm chart for Kubernetes to install Auth0 Authorization application for Traefik forward authentication.
     digest: 937aa80d6e9323328935f352a1eb4029aca2b079a1b2920557abc455a7e46128
     name: forwardauth
     urls:
@@ -214,8 +204,7 @@ entries:
   - apiVersion: v1
     appVersion: "1.0"
     created: "2020-12-22T11:06:14.322760199+01:00"
-    description: A Helm chart for Kubernetes to install Auth0 Authorization application
-      for Traefik forward authentication.
+    description: A Helm chart for Kubernetes to install Auth0 Authorization application for Traefik forward authentication.
     digest: 82c693fcae377853cf4e9dfccd1e014287858bad9e9d3c166d0d85578afb0f47
     name: forwardauth
     urls:
@@ -225,8 +214,7 @@ entries:
   - apiVersion: v1
     appVersion: master
     created: "2020-12-22T11:06:14.331784959+01:00"
-    description: Simple React + Typescript SPA application for demo of authorization
-      and authentication using Forwardauth backend in a SPA client.
+    description: Simple React + Typescript SPA application for demo of authorization and authentication using Forwardauth backend in a SPA client.
     digest: b5e763df33698832313557cbdc4353911013072286845db2b9b545525b3f4a00
     name: spa-demo
     type: application
@@ -236,8 +224,7 @@ entries:
   - apiVersion: v1
     appVersion: master
     created: "2020-12-22T11:06:14.331310567+01:00"
-    description: Simple React + Typescript SPA application for demo of authorization
-      and authentication using Forwardauth backend in a SPA client.
+    description: Simple React + Typescript SPA application for demo of authorization and authentication using Forwardauth backend in a SPA client.
     digest: ae98843e3e3e839984746c2615cc8537cb8999e53c4a14ce00dcd43dbff22549
     name: spa-demo
     type: application
@@ -384,6 +371,16 @@ entries:
     - https://dniel.github.io/charts/traefik-7.2.0.tgz
     version: 7.2.0
   whoami:
+  - apiVersion: v1
+    appVersion: latest
+    created: "2021-01-02T20:32:52.17068449Z"
+    description: Simple webserver used for diagnostics
+    digest: c85d57aaca25a843d41680df8c76b86100d2e1d842e00bd156d7c69bac0cf0e3
+    name: whoami
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/whoami-0.6.0/whoami-0.6.0.tgz
+    version: 0.6.0
   - apiVersion: v1
     appVersion: latest
     created: "2020-12-22T11:06:14.339881014+01:00"
