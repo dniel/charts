@@ -434,6 +434,16 @@ entries:
   www:
   - apiVersion: v1
     appVersion: master
+    created: "2021-01-02T20:49:33.71527642Z"
+    description: Just a simple static website for testing.
+    digest: eb094de59f6952730a156a7874026086139ef744f03d840de56117ac0cfba7eb
+    name: www
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/www-0.5.0/www-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v1
+    appVersion: master
     created: "2020-12-22T11:06:14.341942946+01:00"
     description: Website
     digest: 299589f8fd5aba2d1586113d73d8282e8ac0daac06af97e55f68546ad2d60308
