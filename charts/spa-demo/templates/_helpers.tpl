@@ -10,11 +10,7 @@ Expand the name of the chart.
 Override image name
 */}}
 {{- define "spa-demo.image" -}}
-{{- if .Values.imageOverride -}}
-{{- .Values.imageOverride -}}
-{{- else -}}
-{{- printf "%s:%s" .Values.image.repository .Chart.AppVersion -}}
-{{- end -}}
+{{- printf "%s:%s" .Values.image.repository .Values.image.tag | default .Chart.AppVersion -}}
 {{- end -}}
 
 {{/*
