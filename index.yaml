@@ -54,6 +54,16 @@ entries:
   api-posts:
   - apiVersion: v1
     appVersion: master
+    created: "2021-01-02T20:51:12.980262289Z"
+    description: Simple API to retrieve text posts from backend in JSON format.
+    digest: 4e3d743e86c2f84547455f5d09ce85a313f1b0a4d0c914c79a29968adac34937
+    name: api-posts
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/api-posts-0.6.0/api-posts-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v1
+    appVersion: master
     created: "2020-12-22T11:06:14.322339155+01:00"
     description: A Helm chart for Kubernetes
     digest: 5f6d17a1bf9fb7712aed9472af654d8ffc80b8380d8e7ac16f29d8cc55ec0f99
@@ -482,4 +492,4 @@ entries:
     urls:
     - https://dniel.github.io/charts/www-0.1.tgz
     version: "0.1"
-generated: "2021-01-02T20:49:53.572175230Z"
+generated: "2021-01-02T20:49:53.57217523Z"
