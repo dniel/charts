@@ -403,6 +403,16 @@ entries:
   whoami:
   - apiVersion: v1
     appVersion: latest
+    created: "2021-01-03T15:05:06.415636741Z"
+    description: Simple webserver used for diagnostics
+    digest: 668330b2a73d4f1459cd07d0a639d83ad240ee7a0d2db5ed78090d179e5051c7
+    name: whoami
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/whoami-0.7.0/whoami-0.7.0.tgz
+    version: 0.7.0
+  - apiVersion: v1
+    appVersion: latest
     created: "2021-01-02T20:32:52.17068449Z"
     description: Simple webserver used for diagnostics
     digest: c85d57aaca25a843d41680df8c76b86100d2e1d842e00bd156d7c69bac0cf0e3
