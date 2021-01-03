@@ -2,7 +2,7 @@ apiVersion: v1
 name: whoami
 description: Simple webserver used for diagnostics
 type: application
-version: 0.6.0
+version: 0.7.0
 appVersion: latest
 
 dependencies:
