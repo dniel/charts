@@ -1,9 +1,9 @@
 apiVersion: v1
 name: www
-description: Just a simple static website for testing.
+description: A simple Jekyll static website to server some example content.
 
 type: application
-version: 0.7.0
+version: 0.7.1
 appVersion: master
 
 dependencies:
