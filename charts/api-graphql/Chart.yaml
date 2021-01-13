@@ -1,8 +1,11 @@
 apiVersion: v1
 name: api-graphql
-description: A Helm chart for Kubernetes
+description: |
+  Simple Graphql Servlet application that implements the /graphql endpoint
+  for graphql queries. Does not provide any logic on its own.
+
 type: application
-version: 0.6.0
+version: 0.7.0
 appVersion: master
 
 dependencies:
