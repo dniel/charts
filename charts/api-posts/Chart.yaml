@@ -2,7 +2,7 @@ apiVersion: v1
 name: api-posts
 description: Simple API to retrieve text posts from backend in JSON format.
 type: application
-version: 0.7.0
+version: 0.8.0
 appVersion: master
 
 dependencies:
