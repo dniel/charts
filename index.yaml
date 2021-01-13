@@ -3,6 +3,18 @@ entries:
   api-graphql:
   - apiVersion: v1
     appVersion: master
+    created: "2021-01-13T21:14:32.892345042Z"
+    description: |
+      Simple Graphql Servlet application that implements the /graphql endpoint
+      for graphql queries. Does not provide any logic on its own.
+    digest: 907708d43e1384f28b74b00715d82a332dadada47004d36b6b65c123d3398fc0
+    name: api-graphql
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/api-graphql-0.7.0/api-graphql-0.7.0.tgz
+    version: 0.7.0
+  - apiVersion: v1
+    appVersion: master
     created: "2021-01-13T21:05:21.401955176Z"
     description: A Helm chart for Kubernetes
     digest: 1c626670cf5ec365a85d6cdb98f59b92ee14447ecb41cc2090206a1a35f93185
