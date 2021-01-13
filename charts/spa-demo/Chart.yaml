@@ -3,5 +3,10 @@ name: spa-demo
 description: Simple React + Typescript SPA application for demo of authorization and authentication using Forwardauth backend in a SPA client.
 
 type: application
-version: 0.4.0
+version: 0.5.0
 appVersion: master
+
+dependencies:
+  - name: common
+    version: 2.1.1
+    repository: https://k8s-at-home.com/charts/

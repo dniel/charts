@@ -3,5 +3,10 @@ name: www
 description: Just a simple static website for testing.
 
 type: application
-version: 0.5.0
+version: 0.6.0
 appVersion: master
+
+dependencies:
+  - name: common
+    version: 2.1.1
+    repository: https://k8s-at-home.com/charts/
