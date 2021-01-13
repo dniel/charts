@@ -64,6 +64,16 @@ entries:
   api-posts:
   - apiVersion: v1
     appVersion: master
+    created: "2021-01-13T21:12:58.547553274Z"
+    description: Simple API to retrieve text posts from backend in JSON format.
+    digest: d85abc7e82f633630132d2426d76557e3131030d3e7ddf87b3a1a526629f5ba2
+    name: api-posts
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/api-posts-0.8.0/api-posts-0.8.0.tgz
+    version: 0.8.0
+  - apiVersion: v1
+    appVersion: master
     created: "2021-01-13T21:05:21.539998035Z"
     description: Simple API to retrieve text posts from backend in JSON format.
     digest: 30900d6bd530f95655fbfd7eb6c7e41416fa09351d45c65c81087512fd7852a3
