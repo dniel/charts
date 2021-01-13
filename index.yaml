@@ -3,6 +3,16 @@ entries:
   api-graphql:
   - apiVersion: v1
     appVersion: master
+    created: "2021-01-13T21:05:21.401955176Z"
+    description: A Helm chart for Kubernetes
+    digest: 1c626670cf5ec365a85d6cdb98f59b92ee14447ecb41cc2090206a1a35f93185
+    name: api-graphql
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/api-graphql-0.6.0/api-graphql-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v1
+    appVersion: master
     created: "2020-12-22T11:06:14.319745162+01:00"
     description: A Helm chart for Kubernetes
     digest: 5e202d0ace93e33bbab79054ea75e0eaea15ae1da3a8d729611508b144a44a21
@@ -52,6 +62,16 @@ entries:
     - https://dniel.github.io/charts/api-graphql-0.1.tgz
     version: "0.1"
   api-posts:
+  - apiVersion: v1
+    appVersion: master
+    created: "2021-01-13T21:05:21.539998035Z"
+    description: Simple API to retrieve text posts from backend in JSON format.
+    digest: 30900d6bd530f95655fbfd7eb6c7e41416fa09351d45c65c81087512fd7852a3
+    name: api-posts
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/api-posts-0.7.0/api-posts-0.7.0.tgz
+    version: 0.7.0
   - apiVersion: v1
     appVersion: master
     created: "2021-01-02T20:51:12.980262289Z"
@@ -221,6 +241,16 @@ entries:
     - https://dniel.github.io/charts/forwardauth-0.1.0.tgz
     version: 0.1.0
   spa-demo:
+  - apiVersion: v1
+    appVersion: master
+    created: "2021-01-13T21:05:21.646907125Z"
+    description: Simple React + Typescript SPA application for demo of authorization and authentication using Forwardauth backend in a SPA client.
+    digest: ddd9acb433b181a0d6d1c5dda9c2b33fe03d2a1a33cf6e970ddfd61df73c3b94
+    name: spa-demo
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/spa-demo-0.5.0/spa-demo-0.5.0.tgz
+    version: 0.5.0
   - apiVersion: v1
     appVersion: master
     created: "2021-01-02T21:29:02.040699409Z"
@@ -462,6 +492,16 @@ entries:
     - https://dniel.github.io/charts/whoami-0.1.tgz
     version: "0.1"
   www:
+  - apiVersion: v1
+    appVersion: master
+    created: "2021-01-13T21:05:21.783235486Z"
+    description: Just a simple static website for testing.
+    digest: 95588c478bbf0cc033b34c59ee5c1335fa7feb69cbc89d9cfdc1f0f37beb0e26
+    name: www
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/www-0.6.0/www-0.6.0.tgz
+    version: 0.6.0
   - apiVersion: v1
     appVersion: master
     created: "2021-01-02T20:49:33.71527642Z"
