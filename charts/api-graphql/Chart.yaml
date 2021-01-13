@@ -10,5 +10,5 @@ appVersion: master
 
 dependencies:
   - name: common
-    version: 2.1.1
+    version: 2.2.1
     repository: https://k8s-at-home.com/charts/
