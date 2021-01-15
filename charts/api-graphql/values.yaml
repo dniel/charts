@@ -5,3 +5,14 @@ image:
 service:
   port:
     port: 80
+
+# traefik2 CRD IngressRoute
+ingressroute:
+  enabled: true
+  hostname: api-graphql.example.test
+  certResolver: default
+  entryPoints:
+    - websecure
+  middlewares:
+    - name: forwardauth-authorize
+      namespace: forwardauth

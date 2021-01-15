@@ -1,12 +1,12 @@
 {{- if .Values.ingressroute.enabled -}}
-{{- $fullName := include "www.fullname" . -}}
+{{- $fullName := include "common.names.fullname" . -}}
 {{- $servicePort := .Values.service.port -}}
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: "{{ $fullName }}"
   labels:
-    {{- include "www.labels" . | nindent 4 }}
+    {{- include "common.labels" . | nindent 4 }}
     {{- with .Values.ingressroute.labels }}
     {{- toYaml . | nindent 4 }}
     {{- end }}
@@ -15,6 +15,7 @@ metadata:
   annotations:
     {{- toYaml . | nindent 4 }}
   {{- end }}
+
 spec:
   entryPoints:
   {{- range .Values.ingressroute.entryPoints }}
@@ -27,6 +28,12 @@ spec:
     services:
     - name: {{ $fullName }}
       port: {{ $servicePort }}
+    middlewares:
+  {{- range .Values.ingressroute.middlewares }}
+    - name: {{ .name }}
+      namespace: {{ .namespace }}
+  {{- end }}  
+
   tls:
     certResolver: {{ default "default" .Values.ingressroute.certResolver | quote }}
 
