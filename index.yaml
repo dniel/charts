@@ -287,6 +287,16 @@ entries:
   spa-demo:
   - apiVersion: v1
     appVersion: master
+    created: "2021-01-15T22:40:06.158970582Z"
+    description: Simple React + Typescript SPA application for demo of authorization and authentication using Forwardauth backend in a SPA client.
+    digest: 11c1a6e41003f77f0f04d0de94860a6df07b91b10502ec7a50c1025b0026444c
+    name: spa-demo
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/spa-demo-0.7.0/spa-demo-0.7.0.tgz
+    version: 0.7.0
+  - apiVersion: v1
+    appVersion: master
     created: "2021-01-13T21:19:10.924259878Z"
     description: Simple React + Typescript SPA application for demo of authorization and authentication using Forwardauth backend in a SPA client.
     digest: 96963ebbf5ca477a3a578de70d47fd244b6a2844c042db7ea3aef781e2c6bd07
