@@ -3,6 +3,18 @@ entries:
   api-graphql:
   - apiVersion: v1
     appVersion: master
+    created: "2021-01-16T11:46:02.327306164Z"
+    description: |
+      Simple Graphql Servlet application that implements the /graphql endpoint
+      for graphql queries. Does not provide any logic on its own.
+    digest: bcf455d28a88dea00a0535b08b2df340e2aae10baf5cbb45070de2228f0c6878
+    name: api-graphql
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/api-graphql-0.8.1/api-graphql-0.8.1.tgz
+    version: 0.8.1
+  - apiVersion: v1
+    appVersion: master
     created: "2021-01-13T21:19:10.651188387Z"
     description: |
       Simple Graphql Servlet application that implements the /graphql endpoint
@@ -86,6 +98,16 @@ entries:
     - https://dniel.github.io/charts/api-graphql-0.1.tgz
     version: "0.1"
   api-posts:
+  - apiVersion: v1
+    appVersion: master
+    created: "2021-01-16T11:46:02.650038155Z"
+    description: Simple API to retrieve text posts from backend in JSON format.
+    digest: a5c5e1ed2c00b7204c888b25280bcf5a47c29559b34d373999b7ef138822c4be
+    name: api-posts
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/api-posts-0.9.1/api-posts-0.9.1.tgz
+    version: 0.9.1
   - apiVersion: v1
     appVersion: master
     created: "2021-01-13T21:19:10.791472613Z"
@@ -285,6 +307,16 @@ entries:
     - https://dniel.github.io/charts/forwardauth-0.1.0.tgz
     version: 0.1.0
   spa-demo:
+  - apiVersion: v1
+    appVersion: master
+    created: "2021-01-16T11:46:02.99022383Z"
+    description: Simple React + Typescript SPA application for demo of authorization and authentication using Forwardauth backend in a SPA client.
+    digest: d66b316962a110807b4038b1078e59ffa33b4a6ebab64501d3de57d14a251098
+    name: spa-demo
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/spa-demo-0.7.3/spa-demo-0.7.3.tgz
+    version: 0.7.3
   - apiVersion: v1
     appVersion: master
     created: "2021-01-16T11:43:31.665199772Z"
@@ -527,6 +559,16 @@ entries:
   whoami:
   - apiVersion: v1
     appVersion: latest
+    created: "2021-01-16T11:46:03.300502451Z"
+    description: Simple webserver used for diagnostics
+    digest: bdf380f509ad7cc610383a0beeab05a0a188ec45a4fa4d6d6a3e407d6a715149
+    name: whoami
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/whoami-0.8.1/whoami-0.8.1.tgz
+    version: 0.8.1
+  - apiVersion: v1
+    appVersion: latest
     created: "2021-01-13T21:38:32.432777512Z"
     description: Simple webserver used for diagnostics
     digest: 9489d70367de52f643bb99d0e55082b131100e16a3b12c45647a905bb8888e25
@@ -596,6 +638,16 @@ entries:
     - https://dniel.github.io/charts/whoami-0.1.tgz
     version: "0.1"
   www:
+  - apiVersion: v1
+    appVersion: master
+    created: "2021-01-16T11:46:03.644372843Z"
+    description: A simple Jekyll static website to server some example content.
+    digest: f73438aaec70dc549dade9176e7281097d382d89f7c6a3a24b0824df501b57c2
+    name: www
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/www-0.8.1/www-0.8.1.tgz
+    version: 0.8.1
   - apiVersion: v1
     appVersion: master
     created: "2021-01-13T21:19:11.060240211Z"
