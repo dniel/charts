@@ -1,6 +1,6 @@
 {{- if .Values.ingressroute.enabled -}}
 {{- $fullName := include "common.names.fullname" . -}}
-{{- $servicePort := .Values.service.port -}}
+{{- $servicePort := .Values.service.port.port -}}
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
