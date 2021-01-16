@@ -1,0 +1,34 @@
+{{- if .Values.ingressroute.enabled -}}
+{{- $fullName := include "helm.fullname" . -}}
+{{- $servicePort := .Values.service.port -}}
+{{- if .Values.mode.host -}}
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: "{{ $fullName }}-host"
+  labels:
+    app: {{ template "helm.name" . }}
+    chart: {{ template "helm.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+{{- with .Values.ingressroute.annotations }}
+  annotations:
+{{ toYaml . | indent 4 }}
+{{- end }}
+
+spec:
+  entryPoints:
+    - websecure
+
+  routes:
+  - match: Host(`{{ .Values.ingressroute.hostname }}`)
+    kind: Rule
+    services:
+    - name: {{ $fullName }}
+      port: {{ $servicePort }}
+  tls:
+    certResolver: {{ default "default" .Values.ingressroute.certResolver | quote }}
+
+{{- end -}}
+{{- end }}

@@ -1,0 +1,130 @@
+{{ define "makeImageName" }}
+    {{- if .Values.image.tag }}
+    {{- printf "%s:%s" .Values.image.repository .Values.image.tag -}}
+    {{- else }}
+    {{- print .Values.image.repository }}
+    {{- end }}
+{{- end }}
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ template "helm.fullname" . }}
+  labels:
+    app: {{ template "helm.name" . }}
+    chart: {{ template "helm.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ template "helm.name" . }}
+      release: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ template "helm.name" . }}
+        release: {{ .Release.Name }}
+      annotations:
+        checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ template "makeImageName" . }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          volumeMounts:
+            - name: config-volume
+              mountPath: /config
+          env:
+            - name: JVM_OPTS
+              value: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:MaxRAMFraction=1          
+            - name: ENV
+              value: "{{ .Values.logLevel }}"
+            {{ if (.Values.domain) }}
+            - name: DOMAIN
+              value: "{{ .Values.domain }}"
+            {{ end }}
+            {{ if (.Values.tokenEndpoint) }}
+            - name: TOKEN_ENDPOINT
+              value: "{{ .Values.tokenEndpoint }}"
+            {{ end }}
+            {{ if (.Values.authorizeUrl) }}
+            - name: AUTHORIZE_URL
+              value: "{{ .Values.authorizeUrl }}"
+            {{ end }}
+            {{ if (.Values.default) }}
+            {{ if (.Values.default.scope) }}
+            - name: DEFAULT_SCOPE
+              value: "{{ .Values.default.scope }}"
+            {{ end }}
+            {{ if (.Values.default.audience) }}
+            - name: DEFAULT_AUDIENCE 
+              value: {{ .Values.default.audience }}
+            {{ end }}
+            {{ if (.Values.default.redirectToUri) }}
+            - name: DEFAULT_REDIRECT_URI
+              value: {{ .Values.default.redirectUri }}
+            {{ end }}            
+            {{ if (.Values.default.tokenCookieDomain) }}
+            - name: DEFAULT_TOKEN_COOKIE_DOMAIN
+              value: {{ .Values.default.tokenCookieDomain }}
+            {{ end }}
+            {{ if (.Values.default.name) }}
+            - name: DEFAULT_NAME
+              value: {{ .Values.default.name }}
+            {{ end }}
+            {{ if (.Values.default.clientsecret) }}
+            - name: DEFAULT_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  key: clientsecret
+                  name: "{{ template "helm.fullname" . }}-default"
+            {{ end }}
+            {{ if (.Values.default.clientid) }}
+            - name: DEFAULT_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  key: clientid
+                  name: "{{ template "helm.fullname" . }}-default"
+            {{ end }}
+            {{ end }}
+          readinessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8080
+            initialDelaySeconds: 40
+            timeoutSeconds: 2
+            periodSeconds: 3
+            failureThreshold: 2
+          livenessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8080
+            initialDelaySeconds: 100
+            timeoutSeconds: 2
+            periodSeconds: 15
+            failureThreshold: 1
+          resources:
+{{ toYaml .Values.resources | indent 12 }}
+      volumes:
+        - name: config-volume
+          configMap:
+            name: {{ template "helm.fullname" . }}-config
+
+    {{- with .Values.nodeSelector }}
+      nodeSelector:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+{{ toYaml . | indent 8 }}
+    {{- end }}
