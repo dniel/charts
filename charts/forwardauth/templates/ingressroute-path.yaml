@@ -23,10 +23,10 @@ spec:
   routes:
   - match: PathPrefix(`{{ default "/oauth2" .Values.ingressroute.path }}`)
     kind: Rule
+    priority: {{ default 9999 .Values.ingressroute.pathPriority }}
     services:
     - name: {{ $fullName }}
       port: {{ $servicePort }}
-    priority: .Values.ingressroute.pathPriority
     middlewares:
     - name: "{{ $fullName }}-strip-prefix"
   tls:
