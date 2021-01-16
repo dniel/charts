@@ -2,9 +2,14 @@ image:
   repository: index.docker.io/dniel/forwardauth-spademo
   pullPolicy: IfNotPresent
 
+
+strategy:
+  type: Recreate
+
+env: {}
+
 service:
-  port:
-    port: 80
+  port: 80
 
 # traefik2 CRD IngressRoute
 ingressroute:
