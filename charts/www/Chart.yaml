@@ -3,7 +3,7 @@ name: www
 description: A simple Jekyll static website to server some example content.
 
 type: application
-version: 0.8.0
+version: 0.8.1
 appVersion: master
 
 dependencies:

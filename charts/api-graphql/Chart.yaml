@@ -5,7 +5,7 @@ description: |
   for graphql queries. Does not provide any logic on its own.
 
 type: application
-version: 0.8.0
+version: 0.8.1
 appVersion: master
 
 dependencies:
