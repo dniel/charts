@@ -9,7 +9,8 @@ strategy:
 env: {}
 
 service:
-  port: 80
+  port:
+    port: 80
 
 # traefik2 CRD IngressRoute
 ingressroute:
