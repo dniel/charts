@@ -209,6 +209,15 @@ entries:
   forwardauth:
   - apiVersion: v1
     appVersion: 2.0-rc1
+    created: "2021-01-29T20:54:33.892766346Z"
+    description: A Helm chart for Kubernetes to install Auth0 Authorization application for Traefik forward authentication.
+    digest: cc006ddb3c84e0160d9c08b51c6c4a7b92e8ddf5a14cc20a0e8cc4fdaac11c59
+    name: forwardauth
+    urls:
+    - https://github.com/dniel/charts/releases/download/forwardauth-2.0.12/forwardauth-2.0.12.tgz
+    version: 2.0.12
+  - apiVersion: v1
+    appVersion: 2.0-rc1
     created: "2021-01-16T13:50:21.943267653Z"
     description: A Helm chart for Kubernetes to install Auth0 Authorization application for Traefik forward authentication.
     digest: 07df96ebc624f7c879108350115ed74787903896f22930224f85a201bbe0d64d
