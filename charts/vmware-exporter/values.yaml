@@ -1,0 +1,20 @@
+# Default values for the prometheus vmware-exporter container
+image:
+  repository: pryorda/vmware_exporter
+  pullPolicy: IfNotPresent
+  tag: v0.18.3
+
+env:
+  TZ: UTC
+  PUID: "1001"
+  PGID: "1001"
+
+service:
+  main:
+    ports:
+      http:
+        port: "9272"
+
+serviceMonitor:
+  labels:
+    release: kube-prometheus-stack
