@@ -15,7 +15,3 @@ service:
     ports:
       http:
         port: "9116"
-
-serviceMonitor:
-  labels:
-    release: kube-prometheus-stack
