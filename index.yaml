@@ -342,6 +342,21 @@ entries:
     urls:
     - https://dniel.github.io/charts/forwardauth-0.1.0.tgz
     version: 0.1.0
+  snmp-exporter:
+  - apiVersion: v1
+    appVersion: v0.20.0
+    created: "2022-04-02T20:52:54.745553587Z"
+    description: Prometheus SNMP-exporter container.
+    digest: e052425fa7be7faea450f0c3f9678a7ee663348867a79269c62d9101497f6e49
+    maintainers:
+    - name: Daniel Nord
+    name: snmp-exporter
+    sources:
+    - https://github.com/dniel/charts
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/snmp-exporter-0.0.1/snmp-exporter-0.0.1.tgz
+    version: 0.0.1
   spa-demo:
   - apiVersion: v1
     appVersion: master
@@ -592,6 +607,17 @@ entries:
     urls:
     - https://dniel.github.io/charts/traefik-7.2.0.tgz
     version: 7.2.0
+  vmware-exporter:
+  - apiVersion: v1
+    appVersion: v0.18.3
+    created: "2022-04-02T20:52:54.869970753Z"
+    description: Prometheus vmware-exporter container.
+    digest: 6012cfe9e18c4aa432a624667a75088583ad7df26e1455c3f1cbd8ab23b43677
+    name: vmware-exporter
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/vmware-exporter-0.0.1/vmware-exporter-0.0.1.tgz
+    version: 0.0.1
   whoami:
   - apiVersion: v1
     appVersion: latest
