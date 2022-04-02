@@ -17,6 +17,5 @@ annotations:
 
 dependencies:
   - name: common
-    repository: https://k8s-at-home.com/charts/
+    repository: https://library-charts.k8s-at-home.com
     version: 4.3.0
-
