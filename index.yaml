@@ -345,6 +345,20 @@ entries:
   snmp-exporter:
   - apiVersion: v1
     appVersion: v0.20.0
+    created: "2022-04-02T21:34:50.558635056Z"
+    description: Prometheus SNMP-exporter container.
+    digest: cf13005b801bb92573933f3e8ecf65d5b427e9c08e3b4938bf30f02a889ca041
+    maintainers:
+    - name: Daniel Nord
+    name: snmp-exporter
+    sources:
+    - https://github.com/dniel/charts
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/snmp-exporter-0.0.2/snmp-exporter-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v1
+    appVersion: v0.20.0
     created: "2022-04-02T20:52:54.745553587Z"
     description: Prometheus SNMP-exporter container.
     digest: e052425fa7be7faea450f0c3f9678a7ee663348867a79269c62d9101497f6e49
