@@ -22,3 +22,6 @@
 hs_err_pid*
 /charts/snmp-exporter/charts/
 /charts/vmware-exporter/charts/
+
+# helm dependency lock file
+**/requirements.lock
