@@ -485,6 +485,16 @@ entries:
   tibber-exporter:
   - apiVersion: v1
     appVersion: latest
+    created: "2022-04-11T17:49:11.829975774Z"
+    description: Prometheus tibber-exporter container.
+    digest: 180314a8a298f3b798dd5d8168eecab9d63f42988d6c76e5d66c7bda7e99d32c
+    name: tibber-exporter
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/tibber-exporter-0.0.6/tibber-exporter-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v1
+    appVersion: latest
     created: "2022-04-11T17:32:17.055784741Z"
     description: Prometheus tibber-exporter container.
     digest: a37e427b9719f57546c7d8ec38c4a9b70a1d8a735256e01fedce0b151134713f
