@@ -16,10 +16,10 @@ service:
       http:
         port: "9501"
 
-# workaround because container default
-# CMD is just "-h" to print usage.
+# Workaround because container default CMD is just "-h" to print usage.
+# Enable verbose output.
 args:
-  - "-t $TIBBER_TOKEN"
+  - "-v"
 
 serviceMonitor:
   labels: {}
