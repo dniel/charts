@@ -14,7 +14,7 @@ service:
   main:
     ports:
       http:
-        port: "9272"
+        port: "9501"
 
 serviceMonitor:
   labels: {}
