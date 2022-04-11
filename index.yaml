@@ -482,6 +482,17 @@ entries:
     urls:
     - https://dniel.github.io/charts/spa-demo-0.1.tgz
     version: "0.1"
+  tibber-exporter:
+  - apiVersion: v1
+    appVersion: v0.18.3
+    created: "2022-04-11T13:15:03.117871596Z"
+    description: Prometheus tibber-exporter container.
+    digest: b6dfb7b40a736cd1ecfb45bf5be36808f7b3d7a35fd76c96de4cd6b307b1a6fb
+    name: tibber-exporter
+    type: application
+    urls:
+    - https://github.com/dniel/charts/releases/download/tibber-exporter-0.0.1/tibber-exporter-0.0.1.tgz
+    version: 0.0.1
   traefik:
   - apiVersion: v1
     appVersion: 2.2.0
