@@ -8,13 +8,18 @@ env:
   TZ: UTC
   PUID: "1001"
   PGID: "1001"
-  TIBBER_TOKEN: "personal token from tibber"
+  TIBBER_TOKEN: "oauth token from tibber"
 
 service:
   main:
     ports:
       http:
         port: "9501"
+
+# workaround because container default
+# CMD is just "-h" to print usage.
+args:
+  - "-t $TIBBER_TOKEN"
 
 serviceMonitor:
   labels: {}

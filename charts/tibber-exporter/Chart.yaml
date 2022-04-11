@@ -2,7 +2,7 @@ apiVersion: v1
 name: tibber-exporter
 description: Prometheus tibber-exporter container.
 type: application
-version: 0.0.4
+version: 0.0.5
 appVersion: latest
 
 dependencies:
